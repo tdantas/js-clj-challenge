@@ -16,7 +16,7 @@ function Trie() {
   }
 
   function find(contact, branch) {
-    if (!branch) branch = { };
+    if (!branch) branch = root;
 
     var letter = contact.slice(0,1);
     if (!letter || !branch)
