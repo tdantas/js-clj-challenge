@@ -3,7 +3,7 @@ function Trie() {
   return  { add, find };
 
   function add(contact, trie) {
-    if (!trie) trie = {};
+    if (!trie) trie = root;
 
     var letter = contact.slice(0,1);
     if (!letter)
