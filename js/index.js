@@ -2,9 +2,9 @@ function Trie() {
   var root = { };
   return  { add, find };
 
-  function add(contact, trie) {
-    if (!trie) trie = root;
+  function add(contact) { return _add(contact, root); } 
 
+  function _add(contact, trie) {
     var letter = contact.slice(0,1);
     if (!letter)
       return root;
@@ -15,9 +15,9 @@ function Trie() {
     return add(contact.slice(1), branch);
   }
 
-  function find(contact, branch) {
-    if (!branch) branch = root;
+  function find(contact) { return _find(contact, root) };
 
+  function _find(contact, branch) {
     var letter = contact.slice(0,1);
     if (!letter || !branch)
       return (branch && branch.counter) || 0;
@@ -26,6 +26,7 @@ function Trie() {
   }
 
 }
+
  // --------------------------------- // 
 
 const trie = Trie();
