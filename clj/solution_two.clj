@@ -12,7 +12,7 @@
 ;; ------------------------------------------------
 
 (require '[clojure.java.io :as io])
-(def input (slurp (io/resource "input.tt")))
+(def input (slurp (io/resource "input.txt")))
 
 (time (let [lines (s/split-lines input)]
         (loop [trie {}
