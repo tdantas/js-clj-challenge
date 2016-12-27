@@ -47,9 +47,9 @@ find hak
 
 We perform the following sequence of operations:
 
-Add a contact named hack.
-Add a contact named hacker.
-Find and print the number of contact names beginning with hac. 
-There are currently two contact names in the application and both of them start with hac, so we print  on a new line.
-Find and print the number of contact names beginning with hak. 
-There are currently two contact names in the application but neither of them start with hak, so we print  on a new line.
+Add a contact named hack.  
+Add a contact named hacker.  
+Find and print the number of contact names beginning with hac.   
+There are currently two contact names in the application and both of them start with hac, so we print  on a new line.  
+Find and print the number of contact names beginning with hak.   
+There are currently two contact names in the application but neither of them start with hak, so we print  on a new line.  
